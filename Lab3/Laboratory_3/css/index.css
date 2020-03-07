@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+/*Smartphones */
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+  main {
+    flex-direction: column;
+  }
+
+  .navbar .menu {
+    display: none;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  .social {
+    padding: 1em 5em;
+
+  }
+}
+
+/*Tablets  */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  .navbar .menu {
+    display: none;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 768px) {
+  .navbar .hamburger {
+    display: none;
+  }
+
+  .social .social_icon {
+    padding: 1em;
+  }
+}
+
+/* Header and Nav Bar */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 3em;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  background-color: #36454f;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-end;
+  height: 40px;
+}
+
+.hamburger {
+  color: white;
+  box-sizing: border-box;
+}
+
+.menu {
+  flex:1;
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  color: white;
+  margin: 1em;
+}
+
+.menu li {
+  margin: 2em;
+}
+
+/* Main and products */
+main {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 10em;
+}
+
+.product{
+  display: flex;
+  flex:1;
+  border: 1px #ccc solid;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1em;
+  margin: 1em;
+}
+
+/* Social media */
+.social {
+  display: flex;
+  border-top: 1px #ccc solid;
+  justify-content: space-around;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+/* Text and images */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.logo > img {
+  width: 50px;
+}
