@@ -1,5 +1,5 @@
 const base_url = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10"
-var API_KEY = "AIzaSyB8eXaYUCHSV259ixBNTk4twAPF1XFpjNI"
+var API_KEY = "API_KEY"
 
 var nextPageToken;
 var prevPageToken;
